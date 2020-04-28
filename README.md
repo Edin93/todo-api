@@ -1,5 +1,5 @@
 # todo-api
-A simple todo api with Python Flask
+A simple RestAPI todo application with Python Flask.
 
 ## Requirements:
 
@@ -16,3 +16,6 @@ flask/bin/pip install flask
 ```bash
 chmod a+x app.py
 ```
+
+#### Tutorial
+* This api was created by following [this tutorial]: https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask
