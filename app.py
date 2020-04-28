@@ -60,9 +60,9 @@ def update_task(task_id):
         abort(404)
     if not request.json:
         abort(400)
-    if title in request.json and type(request.json['title']) != unicode:
+    if 'title' in request.json and type(request.json['title']) != unicode:
         abort(400)
-    if description in request.json and type(request.json['descript']) is not unicode:
+    if 'description' in request.json and type(request.json['descript']) is not unicode:
         abort(400)
     task[0]['title'] = request.json.get('title', task[0]['title'])
     task[0]['description'] = request.json.get('description', task[0]['description'])
